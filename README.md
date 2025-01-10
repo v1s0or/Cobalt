@@ -2,6 +2,7 @@
 # CobaltStrike source code
 
 CobaltStrike's source code,tested some code and function
+(ill be releasing a release for compiled code)
 
 Thanks to [cs](https://www.cobaltstrike.com/), [jetbrains](https://www.jetbrains.com/?from=https://github.com/Freakboy/CobaltStrike)
 
