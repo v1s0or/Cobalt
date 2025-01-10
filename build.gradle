@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+}
+
+group = 'vip.youwe'
+version = '4.0'
+
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://repo.fenixedu.org/fenixedu-maven-repository/'
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+
+    // https://mvnrepository.com/artifact/net.jsign/jsign
+    implementation 'net.jsign:jsign:1.3'
+    implementation 'org.apache.james:apache-mime4j-core:0.7.1'
+    implementation 'org.apache.james:apache-mime4j-dom:0.7.1'
+    implementation 'org.apache.james:apache-mime4j-storage:0.7.1'
+
+    // https://mvnrepository.com/artifact/org.apache/fop
+    implementation('org.apache.xmlgraphics:fop:1.1') {
+        // exclude avalon-framework-api and avalon-framework-impl 4.2.0
+        exclude group: 'org.apache.avalon.framework', module: 'avalon-framework-api'
+        exclude group: 'org.apache.avalon.framework', module: 'avalon-framework-impl'
+    }
+
+    implementation 'org.apache.avalon.framework:avalon-framework-api:4.3.1'
+    implementation 'org.apache.avalon.framework:avalon-framework-impl:4.3.1'
+
+    // https://mvnrepository.com/artifact/eu.bitwalker/UserAgentUtils
+    implementation 'eu.bitwalker:UserAgentUtils:1.21'
+
+    // https://mvnrepository.com/artifact/org.nanohttpd/nanohttpd
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+
+    // Could not find xfc.jar (xmlmind:xfc:2.1).
+    // https://mvnrepository.com/artifact/xmlmind/xfc
+    // implementation 'xmlmind:xfc:2.1'
+
+    implementation files('libs/synthetica-2.30.0.jar')
+    implementation files('libs/jgraphx-4.0.4.jar')
+    implementation files('libs/tightvnc-jviewer-2.6.jar')
+    implementation files('libs/xfc-6.3.0.jar')
+    implementation files('libs/sleep-2.1.jar')
+}
+
