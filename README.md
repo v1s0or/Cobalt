@@ -14,6 +14,9 @@ Not a simple reverse code, make sure that the code and functions are working don
 
 Restore the framework searched by the target as much as possible during development
 
+REQUIRED FOR COBALT STRIKE:
+Java 9.X.X
+
 
 ![sss](doc/imgs/cs-01.png)
 
