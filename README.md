@@ -1,7 +1,7 @@
 
 # CobaltStrike source code
 
-**ill be releasing a release for compiled code**
+**Compiled is in release**
 
 
 CobaltStrike's source code,tested some code and function
